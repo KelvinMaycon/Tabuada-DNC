@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada DNC</title>
     <link rel="stylesheet" href="Assets/Style/style.css">
+    <script src="Assets/JS/script.js"></script>
 </head>
 <body>
     <header>
@@ -16,14 +17,14 @@
         <div>
             <p>
                 Qual tabuada você deseja saber?<br>
-                <input class="form" type="number">
+                <input class="form" type="number" id="num">
             </p>           
             <p>
                 Até que número você quer?<br>
-                <input class="form" type="number">
+                <input class="form" type="number" id="end">
             </p>
             <p>
-                <input id="botao" type="button" value="Calcular">
+                <input id="botao" type="button" value="Calcular" onclick="tabuada()">
             </p>
         </div>
         <div id="resposta">
